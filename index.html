@@ -56,7 +56,13 @@
     <header class="mobile-nav">
       <div class="container mobile-container">
         <a href="#" class="mobile-nav-logo link"><span>WEB</span>STUDIO</a>
-        <svg class="js-open-menu" width="32" height="22">
+        <svg
+          width="32"
+          height="22"
+          class="js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <use href="./images/icons.svg#hamburger"></use>
         </svg>
       </div>
@@ -70,34 +76,71 @@
           </svg>
         </button>
 
-        <nav>
-          <ul>
+        <nav class="mobile-navbar">
+          <ul class="mobile-navbar-menu">
             <li>
-              <a href="">Studio</a>
+              <a class="mobile-navbar-menu-link link" href="index.html"
+                >Studio</a
+              >
             </li>
             <li>
-              <a href="">Portfolio</a>
+              <a class="mobile-navbar-menu-link link" href="portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li>
-              <a href="">Contacts</a>
+              <a class="mobile-navbar-menu-link link" href="">Contacts</a>
             </li>
           </ul>
+          <div class="mobile-navbar-contacts">
+            <ul class="nav-contact-info">
+              <li>
+                <a
+                  class="nav-contact-info-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-contact-info-link link"
+                  href="tel:+11(000)111-11-11"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+            <ul class="nav-socials-list list">
+              <li class="nav-socials icon">
+                <a href="#">
+                  <svg class="svg" width="40" height="40">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-socials icon">
+                <a href="#">
+                  <svg class="svg" width="40" height="40">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-socials icon">
+                <a href="#">
+                  <svg class="svg" width="40" height="40">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-socials icon">
+                <a href="#">
+                  <svg class="svg" width="40" height="40">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <!-- NAV CONTACT INFO -->
-        <div>
-          <ul>
-            <li>
-              <a class="nav-contact-info link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="nav-contact-info link" href="tel:+11(000)111-11-11"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
     <main>
@@ -551,13 +594,13 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js" type="text/javascript"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script type="text/javascript" src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js" type="text/javascript"></script>
   </body>
 </html>
