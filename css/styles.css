@@ -101,28 +101,14 @@ body {
   color: var(--NAVY-BLUE);
   letter-spacing: 0.32px;
 }
-a[href="mailto:info@devstudio.com"] {
+.header-contact-info-link {
   font-size: 16px;
   color: var(--SLATE);
   font-weight: 400;
   letter-spacing: 0.32px;
 }
-a[href="tel:+11(000)111-11-11"] {
-  font-size: 16px;
-  color: var(--SLATE);
-  font-weight: 400;
-  letter-spacing: 0.32px;
-}
-a[href="mailto:info@devstudio.com"]:hover {
-  color: var(--IRIS);
-}
-a[href="tel:+11(000)111-11-11"]:hover {
-  color: var(--IRIS);
-}
-a[href="mailto:info@devstudio.com"]:focus {
-  color: var(--IRIS);
-}
-a[href="tel:+11(000)111-11-11"]:focus {
+.header-contact-info-link:hover,
+.header-contact-info-link:focus {
   color: var(--IRIS);
 }
 .active {
@@ -181,12 +167,40 @@ a[href="tel:+11(000)111-11-11"]:focus {
   line-height: 40px;
   letter-spacing: 0.72px;
 }
+.mobile-navbar-menu-link:hover,
+.mobile-navbar-menu-link:focus {
+  color: var(--OCEAN);
+}
+.nav-contact-info {
+  padding-top: 250px;
+}
 .nav-contact-phone {
+  color: var(--SLATE);
   font-family: inherit;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.72px;
+}
+.nav-contact-phone:hover,
+.nav-contact-phone:focus {
+  color: var(--IRIS);
+}
+.nav-contact-email {
+  color: var(--SLATE);
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+.nav-contact-email:hover,
+.nav-contact-email:focus {
+  color: var(--IRIS);
+}
+.nav-socials-list {
+  margin-top: 48px;
+  gap: 100px;
 }
 .mobile-menu {
   display: none;
