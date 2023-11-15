@@ -793,7 +793,7 @@ body {
 
   .advantages-item,
   .team-members-item {
-    flex-basis: calc(100% / 2 -24px);
+    flex-basis: calc(100% / 2 - 24px);
   }
 
   .advantages-title {
